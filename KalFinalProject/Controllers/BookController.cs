@@ -46,11 +46,11 @@ namespace KalFinalProject.Controllers
             return RedirectToAction("Viewbook", new { id = book.BookID });
         }
 
-        /* public IActionResult InsertBook()
+        public IActionResult InsertBook()
         {
-            var bookk = repo.AssignCategory();
-            return View(bookk);
-        } */
+            var mybook = repo.AssignGenre();
+            return View(mybook);
+        }
         public IActionResult InsertBookToDatabase(Book bookToInsert)
         {
             repo.InsertBook(bookToInsert);

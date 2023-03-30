@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\16142\\Downloads\\repos\\KalFinalProject\\KalFinalProject\\wwwroot\\image\\book4.jpg",
+      "PackagePath": "staticwebassets\\image\\book4.jpg"
+    },
+    {
       "Id": "C:\\Users\\16142\\Downloads\\repos\\KalFinalProject\\KalFinalProject\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

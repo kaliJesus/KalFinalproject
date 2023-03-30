@@ -36,14 +36,18 @@ namespace KalFinalProject
                 new { title = bookToInsert.Title, author = bookToInsert.Author });
         }
 
-        /* public Book AssignCategory()
+        public IEnumerable<Genre> GetGenres()
         {
-            var myBookList = GetBookCategories();
+            return _conn.Query<Genre>("SELECT * FROM genres;");
+        }
+
+        public Book AssignGenre()
+        {
+            var genreList = GetGenres();
             var book = new Book();
-            book.Categories = myBookList;
-            
+            book.Genres = genreList;
             return book;
-        } */
+        }
 
         public void DeleteBook(Book book)
         {

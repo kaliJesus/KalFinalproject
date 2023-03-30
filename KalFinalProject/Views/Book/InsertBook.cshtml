@@ -11,7 +11,15 @@
 
     <label asp-for="Author" class="control-label">Author</label>
     <input type="text" step="0.01" name="Author" class="form-control" />
-
+    <div class="form-group">
+        <label for="">Select Genre</label>
+        <select class="form-control" name="GenreID" value="">
+            @foreach (var cat in Model.Genres)
+            {
+                <option value="@cat.GenreID">@cat.GenreID @cat.Name</option>
+            }
+        </select>
+    </div>
     
 
     <input type="submit" value="Create Book" class="btn btn-primary" />

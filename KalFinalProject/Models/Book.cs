@@ -5,6 +5,6 @@
         public int BookID { get; set; }
         public string? Title { get; set; }
         public string? Author { get; set; }
-       /* public IEnumerable<BookCategory> Categories { get; set; } */
+        public IEnumerable<Genre> Genres { get; set; }  
     }
 }

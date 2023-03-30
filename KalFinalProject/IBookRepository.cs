@@ -10,8 +10,10 @@ namespace KalFinalProject
         public void InsertBook(Book bookToInsert);
         //public Book AssignCategory();
         public void DeleteBook(Book book);
-        //public IEnumerable<BookCategory> GetBookCategories();
-        
+        public IEnumerable<Genre> GetGenres();
+
+        public Book AssignGenre();
+
 
     }
 }
